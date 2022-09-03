@@ -1,0 +1,199 @@
+
+body {
+  width: 80vw;
+  font-size: 1rem;
+  margin: 5rem;
+  text-align: center;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.keyboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.keyboard > div {
+  width: auto;
+  height: auto;
+  padding: 1rem;
+}
+
+.keyboard > div > div {
+  border: 0.1rem solid black;
+  padding: 0.5rem;
+}
+
+/* F-KEYS */
+
+#F-keys {
+  display: grid; 
+  grid-template-columns: repeat(16, 1fr); 
+  grid-template-rows: 1fr; 
+  gap: 0.3rem 0.3rem; 
+  grid-template-areas: 
+    "Escape-key F1-key F2-key F3-key F4-key F5-key F6-key F7-key F8-key F9-key F10-key F11-key F12-key . ScreenLock-key Pause-key"; 
+}
+
+.Escape-key { grid-area: Escape-key; }
+.F1-key { grid-area: F1-key; }
+.F2-key { grid-area: F2-key; }
+.F3-key { grid-area: F3-key; }
+.F4-key { grid-area: F4-key; }
+.F5-key { grid-area: F5-key; }
+.F6-key { grid-area: F6-key; }
+.F7-key { grid-area: F7-key; }
+.F8-key { grid-area: F8-key; }
+.F9-key { grid-area: F9-key; }
+.F10-key { grid-area: F10-key; }
+.F11-key { grid-area: F11-key; }
+.F12-key { grid-area: F12-key; }
+.ScreenLock-key {grid-area: ScreenLock-key;}
+.Pause-key {grid-area: Pause-key;}
+
+/* KEYPAD */
+
+#keypad {
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(6, 1fr); 
+  gap: 0.3rem 0.3rem; 
+  grid-template-areas: 
+    "Insert-key Delete-key PageUp-key PageDown-key"
+    "NumLock-key slash-key star-key minus-key"
+    "seven-key eight-key nine-key plus-key"
+    "four-key five-key six-key plus-key"
+    "one-key two-key three-key enter-key"
+    "zero-key zero-key point-key enter-key"; 
+}
+.Insert-key { grid-area: Insert-key; }
+.Delete-key { grid-area: Delete-key; }
+.PageUp-key { grid-area: PageUp-key; }
+.PageDown-key { grid-area: PageDown-key; }
+.minus-key { grid-area: minus-key; }
+.star-key { grid-area: star-key; }
+.slash-key { grid-area: slash-key; }
+.NumLock-key { grid-area: NumLock-key; }
+.seven-key { grid-area: seven-key; }
+.eight-key { grid-area: eight-key; }
+.nine-key { grid-area: nine-key; }
+.plus-key { grid-area: plus-key; }
+.enter-key { grid-area: enter-key; }
+.point-key { grid-area: point-key; }
+.zero-key { grid-area: zero-key; }
+.one-key { grid-area: one-key; }
+.two-key { grid-area: two-key; }
+.three-key { grid-area: three-key; }
+.six-key { grid-area: six-key; }
+.five-key { grid-area: five-key; }
+.four-key { grid-area: four-key; }
+
+#letters { 
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0.3rem 0.3rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "a-key z-key e-key r-key t-key y-key u-key i-key o-key p-key"
+    "q-key s-key d-key f-key g-key h-key j-key k-key l-key m-key"
+    "w-key . x-key . c-key v-key . b-key . n-key"
+    ". . Space-key Space-key Space-key Space-key Space-key Space-key . .";
+}
+
+.a-key { grid-area: a-key; }
+.z-key { grid-area: z-key; }
+.e-key { grid-area: e-key; }
+.r-key { grid-area: r-key; }
+.t-key { grid-area: t-key; }
+.y-key { grid-area: y-key; }
+.u-key { grid-area: u-key; }
+.i-key { grid-area: i-key; }
+.o-key { grid-area: o-key; }
+.p-key { grid-area: p-key; }
+.q-key { grid-area: q-key; }
+.s-key { grid-area: s-key; }
+.d-key { grid-area: d-key; }
+.f-key { grid-area: f-key; }
+.g-key { grid-area: g-key; }
+.h-key { grid-area: h-key; }
+.j-key { grid-area: j-key; }
+.k-key { grid-area: k-key; }
+.l-key { grid-area: l-key; }
+.m-key { grid-area: m-key; }
+.Space-key { grid-area: Space-key; }
+.w-key { grid-area: w-key; }
+.x-key { grid-area: x-key; }
+.c-key { grid-area: c-key; }
+.n-key { grid-area: n-key; }
+.b-key { grid-area: b-key; }
+.v-key { grid-area: v-key; }
+
+/* ARROW KEYS */
+
+#arrow-keys { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-columns: 1fr;
+  gap: 0.3rem 0.3rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". ArrowUp-key ."
+    "ArrowLeft-key ArrowDown-key ArrowRight-key";
+}
+
+.ArrowUp-key { grid-area: ArrowUp-key; }
+.ArrowLeft-key { grid-area: ArrowLeft-key; }
+.ArrowDown-key { grid-area: ArrowDown-key; }
+.ArrowRight-key { grid-area: ArrowRight-key; }
+
+/* RANDOM KEYS */
+
+#random-keys {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "²-key Ampersand-key é-key DoubleQuote-key SingleQuote-key LeftBrace-key §-key è-key ExclamationPoint-key ç-key à-key RightBrace-key Dash-key Return-key Enter-key"
+    "Tab-key ShiftLock-key Shift-key Control-key Alt-key LessThan-key AltGr-key Windows-key comma-key SemiColon-key Equals-key ù-key PowerOf-key Dollar-key µ-key";
+}
+
+.é-key { grid-area: é-key; }
+.²-key { grid-area: ²-key; }
+.DoubleQuote-key { grid-area: DoubleQuote-key; }
+.SingleQuote-key { grid-area: SingleQuote-key; }
+.LeftBrace-key { grid-area: LeftBrace-key; }
+.§-key { grid-area: §-key; }
+.è-key { grid-area: è-key; }
+.ç-key { grid-area: ç-key; }
+.à-key { grid-area: à-key; }
+.RightBrace-key { grid-area: RightBrace-key; }
+.Dash-key { grid-area: Dash-key; }
+.ShiftLock-key { grid-area: ShiftLock-key; }
+.Tab-key { grid-area: Tab-key; }
+.Shift-key { grid-area: Shift-key; }
+.Control-key { grid-area: Control-key; }
+.Alt-key { grid-area: Alt-key; }
+.LessThan-key { grid-area: LessThan-key; }
+.AltGr-key { grid-area: AltGr-key; }
+.Windows-key { grid-area: Windows-key; }
+.comma-key { grid-area: comma-key; }
+.SemiColon-key { grid-area: SemiColon-key; }
+.Equals-key { grid-area: Equals-key; }
+.ù-key { grid-area: ù-key; }
+.PowerOf-key { grid-area: PowerOf-key; }
+.µ-key { grid-area: µ-key; }
+.Dollar-key { grid-area: Dollar-key; }
+.ExclamationPoint-key { grid-area: ExclamationPoint-key; }
+.Ampersand-key { grid-area: Ampersand-key; }
+.Return-key { grid-area: Return-key; }
+.Enter-key { grid-area: Enter-key; }
